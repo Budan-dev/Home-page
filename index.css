@@ -1,0 +1,233 @@
+body{
+    background-color: hsl(36, 100%, 99%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.navul ul{
+    display: flex;
+    list-style-type: none;
+}
+.navul li a{
+    cursor: pointer;
+    color: hsl(236, 13%, 42%);
+    margin-left: 20px;
+    text-decoration: none;
+}
+.navul li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.Hamburger{
+    display: none;
+}
+.close-ham{
+    display: none;
+}
+/*Container*/
+
+.container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+   
+}
+.Image-container{
+    order: 1;
+    width: 65%;
+}
+.Text-container{
+    background-color: rgb(17, 16, 18);
+    width: 35%;
+    order: 2;
+    color: aliceblue;
+}
+.the-main{
+    
+    padding: 15px;
+}
+.the-main h1{
+    color: hsl(35, 77%, 62%);
+    font-size: 50px;
+    font-weight: 700;
+}
+.the-main h6{
+    color: hsl(236, 13%, 42%);
+}
+.the-main p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.the-main p:hover{
+    color: hsl(35, 77%, 62%);
+}
+.image-first{
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+.image-second{
+    display: none;
+}
+.Inner-writeup{
+    display: flex;
+    text-align: left;
+    align-items: first baseline;
+}
+.Inner{
+    width:50%;
+    align-items: center;
+    
+}
+.Inner h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.Inner button{
+    background-color: hsl(35, 77%, 62%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    padding: 15px;
+    width: 50%;
+    font-weight: 700;
+}
+.Inner button:hover{
+    background-color:black ;
+}
+.Inner h6{
+    color: hsl(236, 13%, 42%);
+    width: 90%;
+    padding: 0px;
+    font-size: 16px;
+}
+hr{
+    width: 95%;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.container2 img{
+    width: 70%;
+    height: 100%;
+    
+}
+.container2-item{
+    
+    display: flex;
+}
+.cont2-inner{
+    width: 40%;;
+}
+
+@media (max-width:700px) {
+
+    .Hamburger{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .close-ham{
+        display: block;
+        padding-right: 9px;
+        float: inline-end;
+    }
+    
+    .navul{
+        display:block;
+        height: 35%; 
+        width: 0;
+        position: fixed; 
+        z-index: 1;
+        top: 0;
+       left: 0;
+        background-color: hsl(36, 17%, 89%); 
+        overflow: hidden; 
+       padding-top: 20px;
+       padding-bottom: 10px;
+        transition: 0.5s; 
+        
+    }
+    .navul ul{
+        display: block;
+        float: right;
+        width: 100%;
+    }
+    .navul ul li{
+        padding-top: 10px;
+    }
+    
+    
+    .container{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .container2{
+        display: block;
+        width: 100%;
+    }
+    .container2-item{
+        margin-bottom: 10px;
+        display: flex;
+        width: 100%;
+        
+    }
+    .cont2-inner{
+        display: block;
+        width: 50%;
+    }
+    .container2 img{
+        width: 80%;
+    }
+    .container-item{
+        display: block;
+        width: 100%;
+    }
+    .image-first{
+        display: none;
+    }
+    .image-second{
+        display: block;
+        width: 100%;
+    }
+    .Inner-writeup{
+        display: block;
+        align-items: center;
+    }
+    .the-main{
+        width: 95%;
+        align-items: center;
+    }
+    .the-main h6{
+        width: 80%;
+        word-wrap: break-word;
+    }
+    .the-main p{
+        font-size: 20px;
+    }
+    
+    .Text-container{
+        background-color: black;
+        margin-top: 20px;
+    }
+    .Inner h1{
+        font-size: 50px;
+        font-weight: 800;
+        width: 100%;
+    }
+    
+    .Inner{
+        width: 80%;
+        padding: 0px;
+        align-items: center;
+    }
+    
+}
